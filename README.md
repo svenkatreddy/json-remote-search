@@ -42,7 +42,13 @@ var jsonRemoteSearch = require('json-remote-search')(options);
 }
 */
 
-jsonRemoteSearch('people[country=NZ].name') //=> {value: 'Matt', parents: [...], key: 0} ... etc
+jsonRemoteSearch('people[country=NZ].name')
+   .then(function(result){
+      console.log(result) //=> {value: 'Matt', parents: [...], key: 0} ... etc
+   })
+   .catch(function(err){
+      throw err; 
+   });
 ```
 
 #### Options:
@@ -127,7 +133,13 @@ var jsonRemoteSearch = require('json-remote-search')(options);
   }
 } */
 
-var result = jsonRemoteSearch('grouped_people[**][*country=NZ]').value;
+var result = jsonRemoteSearch('grouped_people[**][*country=NZ]')
+                .then(function(result){
+                  console.log(result.value)
+               })
+               .catch(function(err){
+                  throw err; 
+               });
 ```
 
 The `result` will be:
