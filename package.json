@@ -1,6 +1,6 @@
 {
   "name": "json-remote-search",
-  "version": "1.0.0",
+  "version": "0.9.0",
   "description": "downloads remotes json and creates search api for it",
   "main": "index.js",
   "scripts": {
