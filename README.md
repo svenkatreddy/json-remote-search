@@ -20,7 +20,7 @@ var result = jq([*]);
 
 ```
 
-### `jsonQuery(query, options)`
+### `jsonRemoteSearch(query)`
 
 Specify a query and what to query. Returns an object that describes the result of the query.
 
