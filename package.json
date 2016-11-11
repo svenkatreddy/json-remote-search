@@ -1,0 +1,31 @@
+{
+  "name": "json-remote-search",
+  "version": "1.0.0",
+  "description": "downloads remotes json and creates search api for it",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svenkatreddy/json-remote-search.git"
+  },
+  "keywords": [
+    "json",
+    "remote",
+    "search",
+    "download",
+    "api"
+  ],
+  "author": "Venkat Reddy",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/svenkatreddy/json-remote-search/issues"
+  },
+  "homepage": "https://github.com/svenkatreddy/json-remote-search#readme",
+  "dependencies": {
+    "json-query": "^2.2.0",
+    "moment": "^2.16.0",
+    "request": "^2.78.0"
+  }
+}
