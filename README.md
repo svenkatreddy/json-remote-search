@@ -14,9 +14,15 @@ var options = {
   url: 'http://www.json-generator.com/api/json/get/bVfgyCTYLC',
   expires: 3000 //3000 milliseconds
 };
-var jq = require('json-remote-search')(options);
+var jsonRemoteSearch = require('json-remote-search')(options);
 
-var result = jq([*]);
+jsonRemoteSearch('[*]')
+   .then(function(result){
+      console.log(result) //=> {value: 'Matt', parents: [...], key: 0} ... etc
+   })
+   .catch(function(err){
+      throw err; 
+   });
 
 ```
 
