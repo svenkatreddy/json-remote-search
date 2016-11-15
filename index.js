@@ -11,9 +11,14 @@ const defaultConfig = {
   hashExpiry: 9999999,
 };
 
-const jsonRemoteSearch = (params) => {
-  const config = Object.assign({}, defaultConfig, params);
-  return (query, options) => {
+const defaultOptions = {
+  locals: '',
+}
+
+const jsonRemoteSearch = (paramConfig) => {
+  const config = Object.assign({}, defaultConfig, paramConfig);
+  return (query, paramOptions) => {
+    const options = Object.assign({}, defaultOptions, paramOptions);
     return new Promise( function(resolve,reject) {
       /* load file from server */
       loadManager(config, (err, data)=> {
