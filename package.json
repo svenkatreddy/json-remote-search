@@ -4,7 +4,7 @@
   "description": "downloads remote json and creates search api for it",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,9 @@
     "json-query": "^2.2.0",
     "moment": "^2.16.0",
     "request": "^2.78.0"
+  },
+  "devDependencies": {
+    "mocha": "~2.2",
+    "chai": ">1.8.1"
   }
 }
