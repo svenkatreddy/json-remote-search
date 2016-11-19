@@ -1,7 +1,7 @@
 # json-remote-search
 [![Build Status](https://travis-ci.org/svenkatreddy/json-remote-search.svg?branch=master)](https://travis-ci.org/svenkatreddy/json-remote-search)
 
-Downloads remote json and provides searching api for it
+Downloads remote json, keeps cache and provides searching api for it
 
 ## Install via [npm](https://www.npmjs.com/package/json-remote-search)
 
